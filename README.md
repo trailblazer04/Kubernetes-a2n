@@ -17,6 +17,7 @@ kind load docker-image nextjs-add2num:latest
 # Step 3: Deploy to Kubernetes
 kubectl apply -f kubernetes/deployment.yaml
 kubectl apply -f kubernetes/service.yaml
+kubectl apply -f kubernetes/namespace.yaml
 
 # Step 4: Verify
 kubectl get pods
